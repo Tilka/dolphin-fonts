@@ -11,8 +11,6 @@ import struct
 from PIL import Image
 
 
-# TODO: use bytearray()
-
 def u8(data, ofs):
     return struct.unpack('>B', data[ofs:ofs + 1])[0]
 def u16(data, ofs):
